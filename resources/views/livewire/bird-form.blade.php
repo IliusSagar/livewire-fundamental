@@ -9,8 +9,16 @@
             <textarea wire:model='notes'></textarea>
         </div>
         <button>Add a New Bird Count Entry</button>
-        {{-- {{ $message}} --}}
+      
     </form>
+
+    @if($errors->any())
+        <div>
+            @foreach ($errors->all() as $error)
+                <div>{{ $error }}</div>
+            @endforeach
+        </div>
+    @endif
 
     <div>
         @foreach ($entries as $entry)
