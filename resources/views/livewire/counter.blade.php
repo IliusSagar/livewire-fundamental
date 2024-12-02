@@ -1,7 +1,7 @@
 <div>
   
    <p>{{ $count}}</p>
-   <input type="number" wire:model.live='count'>
-   <button wire:click='changeCount(8)'>Change count</button>
+   <input type="number" wire:model.blur='number'>
+   <button wire:click='changeCount({{ $number}})'>Change count</button>
    
 </div>
