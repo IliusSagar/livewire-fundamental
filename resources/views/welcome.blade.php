@@ -7,6 +7,6 @@
     <title>Livewire Fundamental</title>
 </head>
 <body>
-    <livewire:first-component />
+    <livewire:counter />
 </body>
 </html>
